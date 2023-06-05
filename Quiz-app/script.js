@@ -81,10 +81,12 @@ function deselectQuiz(){
 
 sumbit.addEventListener('click',() => {
     let answer = selectQuiz();
-
+    if(answer){ 
+        
     if(answer === quizData[currentQuiz].correct){
         score++;
     }
+
 
     currentQuiz++;
 
@@ -98,4 +100,7 @@ sumbit.addEventListener('click',() => {
         <button class = "btn" onclick = "location.reload()">Reload</button>
         `
     }
+ }else{
+    alert("Please Select one option")
+ }
 })
