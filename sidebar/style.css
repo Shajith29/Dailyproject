@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+}
+
+
+/* sidebar button*/
+
+#sidebar-toggle{
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2.3rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.4s linear;
+    animation: grow 2s ease-in-out infinite;
+}
+
+#sidebar-toggle:hover{
+    color: rgb(226, 248, 255);
+}
+
+@keyframes grow {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem;
+}
+
+#close-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+#close-btn:hover{
+    transform: rotate(360deg);
+}
+
+
+#logo{
+    justify-self: center;
+    height: 40px;
+}
+
+.links  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+.links li a{
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color:#000;
+    transition: all 0.5s linear;
+}
+
+.links li a:hover{
+    background-color: lightblue;
+    padding-left: 1.75rem;
+}
+
+.social-links{
+    position: fixed;
+    bottom: 10px;
+    left: 30%;
+    justify-self: center;
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 2px;
+
+}
+
+.social-links a{
+    margin: 10px;
+    font-size: 2rem;
+    color: rgb(32, 174, 221);
+}
+
+.social-links a:hover{
+    color: rgb(34, 127, 158);
+}
+
+
+.sidebar.show-links{
+    transform: translateX(0);
+}
+
+
+@media (min-width: 676px) {
+    .sidebar{
+        width: 30%;
+    }
+
+    .social-links{
+        left: 20%;
+    }
+    
+}
