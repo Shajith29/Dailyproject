@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero{
+    background: url('/pexels-andreea-ch-1166644.jpg') no-repeat left/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+}
+
+.banner h2{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.banner img{
+    height: 200px;
+    width: 300px;
+}
+
+.banner .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .btn{
+    display: block;
+    margin: 20px 0 10px 0;
+    border: none;
+    background-color: rgb(29, 166, 212);
+    font-size: 1rem;
+    font-family: inherit;
+    padding: .5rem 1.4rem;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.banner .btn:hover{
+    background-color: #fff;
+    border: 2px solid rgb(29, 166, 212);
+    color: rgb(29, 166, 212);
+}
+.banner .btn:focus{
+    outline: none;
+}
+
+.banner .btn:active{
+    transform: scale(0.98);
+}
+
+
+.overlay-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    z-index: -10;
+    transition: all 1s ease-in-out;
+}
+
+.open-modal{
+    transform: translateX(0);
+    z-index: 10;
+}
+
+.modal-container{
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,.2);
+}
+
+.modal-container h3{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+
+.modal-container img{
+    margin: 0;
+    height: 200px;
+    width: 300px;
+}
+
+.modal-container p{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.modal-container .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-container .close-btn:hover{
+    transform: scale(1.5);
+}
