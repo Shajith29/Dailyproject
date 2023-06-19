@@ -11,7 +11,7 @@ body{
 }
 
 .hero{
-    background: url('img/pexels-andreea-ch-1166644.jpg') no-repeat left/cover;
+    background: url('/img/pexels-andreea-ch-1166644.jpg') no-repeat left/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
