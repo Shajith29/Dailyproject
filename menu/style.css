@@ -185,9 +185,16 @@ header h1{
     
     }
 
+    .button-container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     .filter-btn{
-        font-size: .6rem;
-        margin: 8px;
+        font-size: .8rem;
+        margin: 10px;
+        margin-bottom: 5px;
         
     }
 
@@ -203,6 +210,7 @@ header h1{
     }
 
     .menu-items{
+        padding: 10px;
         font-size: .8rem;
     }
 
@@ -214,3 +222,4 @@ header h1{
         width: 100%;
     }
 }
+
