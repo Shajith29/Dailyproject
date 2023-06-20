@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #A75D5D;
+    font-family: 'Poppins',sans-serif;
+    color: #ACB1D6;
+    margin: 0;
+    height: 100vh;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* title */
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    color: #F0997D;
+}
+
+.title h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title .underline{
+    margin-top: 10px;
+    background-color: #000;
+    height: 5px;
+    width: 100px;
+    background-color: #F0997D;
+}
+
+
+
+/*filter button*/
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.filter-btn{
+    border: none;
+    margin: 10px;
+    color: #FFC3A1;
+    background: transparent;
+    font-size: 1.1rem;
+    border: 2px solid #FFC3A1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.filter-btn:hover{
+    background-color: #F0997D;
+    color: #A75D5D;    
+}
+
+.filter-btn:focus{
+    outline: none;
+}
+
+.filter-btn:active{
+    transform: scale(0.98);
+}
+
+
+/* section center */
+
+.section-center{
+    position: relative;
+    margin: 0;
+    max-width: 1200px;
+    width: 90vw;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+
+.menu-items{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 5;
+
+}
+
+.photo{
+    object-fit: cover;
+    width: 300px;
+    height: 170px;
+    border-radius: 4px;
+    border: 5px solid #F0997D;
+}
+
+.item-info{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    width: 500px;
+    text-align: justify;
+    color: #F0997D;
+}
+
+header{
+    padding: 10px;
+    border-bottom: 2px solid #F0997D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+header h1{
+    margin: 0;
+    padding: 0;
+}
+
+.item-text{
+    width: 300px;
+    padding: 10px;
+    margin: 0;
+    color: #FFC3A1;
+}
+
+
+@media (max-width: 968px) {
+    .section-center{
+        flex-direction: column;
+        width: 500px
+    }
+
+
+    
+    
+}
