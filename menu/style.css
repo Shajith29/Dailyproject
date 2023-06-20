@@ -97,6 +97,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 20px;
 
     
 }
@@ -153,10 +154,63 @@ header h1{
 @media (max-width: 968px) {
     .section-center{
         flex-direction: column;
-        width: 500px
+        width: 600px
+    }
+
+    .menu-items{
+        flex-direction: column;
+    }
+
+    .item-info{
+        margin-top: 20px;
+        width: 350px;
+    }
+
+    .photo{
+        width: 390px;
+        height: 260px;
+    }
+
+    
+    
+}
+
+@media (max-width: 496px) {
+
+    .title{
+        margin-top: 5vh;
+    }
+    .title h1{
+        font-size: 1.6rem;
+    
+    }
+
+    .filter-btn{
+        font-size: .6rem;
+        margin: 8px;
+        
     }
 
 
+    .section-center{
+        width: 400px;
+    }
     
-    
+
+    .photo{
+        width: 230px;
+        height: 200px;
+    }
+
+    .menu-items{
+        font-size: .8rem;
+    }
+
+    .item-info{
+        width: 250px;
+    }
+
+    .item-text{
+        width: 100%;
+    }
 }
