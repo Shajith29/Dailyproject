@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #27374D;
+    font-family: 'Poppins',sans-serif;
+    color: #DDE6ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.deadline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.deadline-format{
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    background-color: #9DB2BF;
+    margin: 10px;
+    color: #27374D;
+}
+
+.deadline-format h4{
+    margin: 0;
+    font-size: 2rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.deadline-format span{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.deadline.over{
+    display: none;
+}
+
+
