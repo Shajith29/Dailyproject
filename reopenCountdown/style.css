@@ -64,22 +64,27 @@ body{
      }
 
      .center{
-        margin-top: 40vh;
+        margin-top: 45vh;
         padding: 10px;
      }
 
+     .title h1{
+        margin-bottom:20px;
+     }
+
     .deadline-format{
-        height: 55px;
-        width: 55px;
+        margin-top: 5px;
+        height: 70px;
+        width: 70px;
     }
 
     .deadline-format h4{
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     
     .deadline-format span{
-        font-size: .7rem;
+        font-size: 1rem;
         letter-spacing: 1px
     };
 }
