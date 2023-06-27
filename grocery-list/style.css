@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #4D3E3E;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    color: #FF926B;
+}
+
+/*section center*/
+
+.section-center{
+    margin-top: 15vh;
+    width: 650px;
+    background-color: #FFF3CD;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*form container*/
+.grocery-form{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.grocery-form p{
+    color: #4D3E3E;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 30px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.grocery-form h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.grocery-form input{
+    border: none;
+    width: 450px;
+    height: 34px;
+    font-size: 1.2rem;
+    padding: 20px;
+    font-family: inherit;
+    background-color: #4D3E3E;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+    color: #FF926B;
+}
+
+.grocery-form input:focus{
+    outline: none;
+}
+
+.grocery-form button{
+    border: none;
+    font-size: 1rem;
+    background-color: #4D3E3E;
+    padding: 8.5px 15px;
+    font-family: inherit;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+    color: #FF926B;
+    cursor: pointer;
+}
+
+
+.grocery-form button:active{
+    transform: scale(0.98);
+}
+
+/*end of form container*/
+
+.grocery-container{
+    margin-top: 20px;
+    visibility: hidden
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 3px 18px;
+    
+}
+
+.grocery-items .title{
+    font-size: 1.4rem;
+    margin-left: 30px;
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-weight:800;
+    text-transform: capitalize;
+}
+
+.grocery-items .btn-container{
+    margin-bottom: 14px;
+    margin-right: 25px;
+}
+
+
+.edit-btn,.delete-btn{
+    border: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.edit-btn{
+    color:lightgreen
+}
+
+.edit-btn:hover{
+    color: rgb(188, 255, 188)
+}
+
+.delete-btn{
+    color: red;
+}
+
+.delete-btn:hover{
+    color: rgb(237, 104, 104)
+}
+
+.clear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn{
+    border:none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #FF926B;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+@media (max-width: 550px) {
+    .section-center{
+        width: 350px;
+    }
+
+    .grocery-form p{
+        font-size: .8rem;
+    
+    }
+
+    .grocery-form h2{
+        font-size: 1.5rem;
+    }
+
+    .grocery-form input{
+        margin-left: 70px;
+        display: block;
+        padding: 5px;
+        height: 20px;
+        width: 190px;
+        border-radius: 20px;
+        font-size: .7rem;
+    }
+
+    .grocery-form button{
+        width: 50px;
+        font-size: .5rem;
+        text-align: center;
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .grocery-items .title{
+        font-size: .8rem;
+    }
+
+    .grocery-items button{
+        font-size: .7rem;
+    }
+
+    .clear-btn{
+        font-size: .8rem;
+    }
+
+
+
+
+    
+}
