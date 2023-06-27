@@ -185,7 +185,7 @@ body{
     }
 
     .grocery-form input{
-        margin-left: 60px;
+        margin-left: 68px;
         display: block;
         padding: 12px;
         height: 20px;
@@ -213,8 +213,12 @@ body{
         padding: 0;
     }
 
+    .btn-container{
+        margin-top: 12.2px;
+    }
     .grocery-items button{
-        font-size: .7rem;
+    
+        font-size: .8rem;
     }
 
     .clear-btn{
