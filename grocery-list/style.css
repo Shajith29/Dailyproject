@@ -12,7 +12,6 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
-    overflow: hidden;
     color: #FF926B;
 }
 
@@ -172,6 +171,8 @@ body{
 @media (max-width: 550px) {
     .section-center{
         width: 350px;
+        padding: 10px;
+        margin:50px 15px
     }
 
     .grocery-form p{
@@ -180,30 +181,36 @@ body{
     }
 
     .grocery-form h2{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .grocery-form input{
-        margin-left: 70px;
+        margin-left: 60px;
         display: block;
-        padding: 5px;
+        padding: 12px;
         height: 20px;
-        width: 190px;
+        width: 180px;
         border-radius: 20px;
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .grocery-form button{
-        width: 50px;
-        font-size: .5rem;
+        width: 65px;
+        font-size: .7rem;
         text-align: center;
-        padding: 5px;
+        padding: 8px 12px;
         margin-top: 20px;
         border-radius: 5px;
     }
 
+    .grocery-items{
+        padding: 0;
+    }
+
     .grocery-items .title{
-        font-size: .8rem;
+        font-size: .9rem;
+        margin-bottom: 0;
+        padding: 0;
     }
 
     .grocery-items button{
