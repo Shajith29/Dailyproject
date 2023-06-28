@@ -161,6 +161,7 @@ body{
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #4D3E3E
 }
 
 .clear-btn{
@@ -236,7 +237,7 @@ body{
     }
     .clear-btn{
      
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
 
