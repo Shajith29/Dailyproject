@@ -5,12 +5,13 @@ const form = document.querySelector('.grocery-form');
 const container = document.querySelector('.grocery-container')
 const list = document.querySelector('.grocery-list');
 const clearBtn  = document.querySelector('.clear-btn')
-
+const totalItems = document.querySelector('.total');
 
 //Edit option
 let editFlag = false;
 let editElement;
 let editID = '';
+let itemCount = 0;
 
 //event listner to listen for the form submission and invoke the addItem function
 form.addEventListener('submit',addItem);
@@ -21,6 +22,11 @@ clearBtn.addEventListener('click',clearAllItem)
 //As soon as the page loads retrive item from the local storage
 
 window.addEventListener('DOMContentLoaded',setuptItem)
+
+//total items in the list
+
+
+
 
 
 function addItem(e){
@@ -41,6 +47,8 @@ function addItem(e){
         displayAlert('Item is added to the list')
         addtoLocalStorage(id,value);
         setToDefault() 
+
+         
     }
 
     //Condition 2 check if the value user entered is for editing 
@@ -73,6 +81,10 @@ function displayAlert(text){
     setTimeout(() => {
         alert.innerText = '';
     },2000)
+
+    totalItems.innerText = `Total items: ${updateCount()}`
+
+   
 }
 
 
@@ -132,10 +144,12 @@ function createList(id,value){
 
         
             list.appendChild(element)
- 
+          
 
 
 }
+
+
 
 
 // Function to delete a single item from the list
@@ -155,6 +169,7 @@ function deleteItem(e) {
     displayAlert(`${itemName} is deleted from the list`)
     setToDefault()
     removeFromLoacalStorage(id)
+
 
 }
 
@@ -199,6 +214,7 @@ function addtoLocalStorage(id,value){
     console.log(items)
     items.push(grocery);
     localStorage.setItem('list',JSON.stringify(items));
+    
 
 }
 
@@ -213,7 +229,7 @@ function removeFromLoacalStorage(id){
         }
     })
 
-    console.log(item)
+    itemCount = items.length;
 
     localStorage.setItem('list',JSON.stringify(items));
 
@@ -248,4 +264,13 @@ function setuptItem(){
 
         container.classList.add('show-container')
     }
+
+
 }
+
+
+function updateCount(){
+    let count = list.children.length
+    return count;
+} 
+
