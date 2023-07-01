@@ -10,6 +10,7 @@ const showMoreBtn = document.getElementById('show-more')
 
 let page = 1;
 let userInput = ""
+let count = 0;
 
 
 
@@ -53,6 +54,7 @@ async function searchImage(){
         showMoreBtn.style.display = 'block'
     }
     
+      
     page++;
       
 
@@ -61,6 +63,7 @@ async function searchImage(){
 form.addEventListener('click',(e) => {
     e.preventDefault() 
     searchImage()
+    clearPage()
 })
 
 showMoreBtn.addEventListener('click',() => {
@@ -68,4 +71,8 @@ showMoreBtn.addEventListener('click',() => {
     searchImage()
 })
 
+
+function clearPage(){
+    imageContainer.innerHTML = ""
+}
 
