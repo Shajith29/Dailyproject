@@ -23,6 +23,10 @@ h1{
     letter-spacing: 2px;
 }
 
+h1 span{
+    color: #ffa31a
+}
+
 .container{
     background-color: #292929;
     max-width: 400px;
@@ -32,12 +36,18 @@ h1{
 }
 
 #result{
+    background-color: #1b1b1b;
+    color: #fff;
     width: 100%;
     padding: 10px;
     font-size: 2rem;
     border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.3) inset; 
+}
+
+#result:focus{
+    outline: none
 }
 
 .btn-container{
