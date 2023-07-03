@@ -23,7 +23,7 @@ h1{
     letter-spacing: 2px;
 }
 
-h1 span{
+.title{
     color: #ffa31a;
 }
 
@@ -74,6 +74,13 @@ button:hover{
     background-color: #ddd;
 }
 
+
+.all-clear{
+    background-color: #808080;
+    color: #fff
+
+}
+
 .clear{
     background-color: #808080;
     color: #fff;
@@ -92,5 +99,13 @@ button:hover{
 .equals{
     background-color: #ffa31a;
     color: #fff;
-    grid-row: span 3
+}
+
+
+button:nth-child(17){
+    grid-column: span 2;
+}
+
+button:active{
+    transform: scale(0.98);
 }

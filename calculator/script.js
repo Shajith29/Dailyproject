@@ -7,12 +7,17 @@ buttonsEl.forEach((button) => {
         
         const buttonValue = e.currentTarget.innerText;
         
-        if(buttonValue === "C"){
-            clearResult()
+        if(buttonValue === "AC"){
+            AllclearResult()
         }
 
         else if(buttonValue === "="){
             calculateResult()
+        }
+
+        else if(buttonValue === "C"){
+            clearResult()
+
         }
 
         else{
@@ -33,6 +38,12 @@ function calculateResult(){
 }
 
 
-function clearResult(){
+function AllclearResult(){
     inputEl.value = ''
+}
+
+function clearResult(){
+    let value = inputEl.value;
+    value = value.substring(0,value.length - 1);
+    inputEl.value = value;
 }
