@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f1de;
+    color: #f4f1de;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+}
+
+.container{
+    margin-top: 10vh;
+    margin-left: 4vh;
+    background-color:#e07a5f ;
+    width: 600px;
+    height: 525px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+}
+
+.btn-container .btn{
+    border: none;
+    background-color: transparent;
+    margin: 15px;
+    font-size: 2.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-container{
+    width: 100%;
+    height:40%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-container p{
+    font-size: 1.4rem;
+    margin: 10px auto;
+}
+
+#result{
+    font-size: 1.5rem;
+}
+
+.score-container{
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score{
+    color: #f4f1de;
+    padding: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.u-score{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.c-score{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+#reset{
+    background-color: #f2cc8f;
+    color: #3d405b;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    margin-top: 85px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#reset:active{
+    transform: scale(0.98);
+}
+
+
+@media (min-width: 992px) {
+
+    .container{
+        margin-top: 15vh;
+        margin-left: 28vw;
+        width: 650px;
+        height: 550px;
+    }
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .title p{
+        font-size: 1.5rem;
+    }
+
+    .btn-container .btn{
+        font-size: 3rem;
+    }
+    
+    .result-container p{
+        font-size: 1.6rem;
+    }
+
+    .result-container #result{
+        font-size: 1.6rem;
+    }
+
+    .c-score{
+        right: 30px;
+    }
+}
+
+
