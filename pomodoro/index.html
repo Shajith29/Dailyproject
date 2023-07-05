@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+
+      <div class="text">
+        <p class="timer" id="timer">25:00</p>
+        <button class="repeat hidden" id="repeat">
+          <i class="fa fa-rotate-right"></i>
+        </button>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn" id="start">start</button>
+        <button class="btn" id="stop">stop</button>
+        <button class="btn" id="reset">reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
