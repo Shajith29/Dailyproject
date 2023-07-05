@@ -141,13 +141,17 @@ body{
 }
 
 @media (max-width: 520px) {
+
+    body{
+        overflow: hidden;
+    }
     
     .container{
         width: 350px;
         height: 300px;
         padding: 10px;
+        margin: 0 auto;
         margin-top: 30vh;
-        margin-left: 40px;
         
     }
    
