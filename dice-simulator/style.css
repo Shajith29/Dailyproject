@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #edf2f4;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+}
+
+h1{
+    color: #2b2d42;
+    text-align: center;
+    margin-top: 5vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px
+}
+
+.dice-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.dice{
+    font-size: 6.5rem;
+    color: #ef233c;
+    margin: 0;
+}
+
+.dice-animate{
+    animation: roll 0.8s linear;
+}
+
+@keyframes roll {
+
+    0%{
+        transform: rotateY(0deg) rotateY(0deg);
+    }
+
+    100%{
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+    
+}
+
+.btn{
+    border: none;
+    background-color: #d90429;
+    color: #edf2f4;
+    font-family: inherit;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: #ef233c;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.roll-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.roll-history li{
+    position: relative;
+    width: 450px;
+    height: 60px;
+    padding: 15px;
+    margin: 6px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style-type: none;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+
+.roll-history li span{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2.5rem;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+}
+
+#clear{
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    
+}
+
+.hide{
+    display: none;
+}
+
+@media (min-width: 992px) {
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    .dice{
+        font-size: 7.5rem;
+    }
+    
+    .btn{
+        font-size: 1.3rem;
+    }
+
+    .roll-history li{
+        width: 500px;
+        height: 65px;
+        font-size: 1.3rem;
+        padding:18px;
+
+    }
+}
+
+@media (max-width: 510px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .dice{
+        font-size: 5rem;
+    }
+
+    .btn{
+        font-size: .7rem;
+        padding: 5px 10px;
+    }
+    
+    .roll-history li{
+        width: 250px;
+        height: 40px;
+        font-size: .8rem;
+        padding: 11px;
+    }
+
+    .roll-history li span{
+        font-size: 1.7rem;
+    }
+
+    #clear{
+        font-size: .7rem;
+        padding: 5px 10px;
+    }
+}
