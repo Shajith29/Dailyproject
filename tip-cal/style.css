@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fdfcdc;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1{
+    color: #0081a7;
+    margin-top: 12vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    background-color: #00afb9;
+    color: #fdfcdc;
+    padding: 20px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+}
+
+.user-input{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-input label:nth-child(1){
+    padding-top: 40px;
+}
+
+
+.user-input label{
+    margin: 3px 10px;
+
+}
+
+.user-input input{
+    width: 90%;
+    border: none;
+    padding: 5px 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.user-input input:focus{
+    outline: none;
+}
+
+.result-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.people-container{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.people-container label{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.btn{
+    border: none;
+    font-size: 1.4rem;
+    background-color: #fdfcdc;
+    color: #00afb9;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.people-container span{
+    font-size: 2.2rem;
+    margin: 5px 10px;
+    padding: 3px;
+}
+
+.total-container{ 
+    font-size: 1.2rem;
+    margin: 10px;
+    margin-top:11px;
+    text-align: center;
+}
+
+.total-container div{
+    font-size: 2.2rem;
+}
+
+
+@media (max-width: 510px) {
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .container{
+        width: 360px;
+        font-size: 1.2rem;
+        margin: 20px;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .input{
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .result-container{
+        margin-top: 25px;
+    }
+
+    .people-container{
+        font-size: 1rem;
+       
+    }
+
+    .btn-container .btn{
+        height: 25px;
+        width: 25px;
+    }
+
+    .btn-container span{
+        font-size: 1.8rem;
+    }
+
+    .total-container div{
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+    
+}
+
+
