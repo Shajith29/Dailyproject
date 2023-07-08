@@ -117,14 +117,13 @@ h1{
 @media (max-width: 510px) {
 
     h1{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .container{
-        width: 360px;
+        width: 350px;
         font-size: 1.2rem;
         margin: 20px;
-        padding: 10px;
         height: 400px;
     }
 
@@ -139,21 +138,35 @@ h1{
 
     .people-container{
         font-size: 1rem;
+        margin-left: 0;
        
     }
 
+    .people-container label{
+        font-size: 1rem;
+    }
+
+
     .btn-container .btn{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
+        font-size: 1.2rem;
+        text-align: justify;
     }
 
     .btn-container span{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .total-container{
+        font-size: 1rem;
+        margin-top: 17px;
+        margin-right: 0;
     }
 
     .total-container div{
         margin-top: 10px;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     
 }
