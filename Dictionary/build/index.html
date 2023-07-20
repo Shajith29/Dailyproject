@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>English Dictionary</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body
+        class="flex min-h-screen flex-col items-center justify-center bg-customNavyBlue font-Poppins"
+    >
+        <!-- Container which contains all the elements -->
+        <div
+            class="max-h-[500px] w-[380px] rounded-xl bg-customWhite p-10 shadow-lg md:max-h-[500px] md:w-[600px] md:p-12"
+        >
+            <!-- Heading and Input -->
+            <div
+                class="flex flex-col items-center justify-between space-y-4 md:space-y-6"
+            >
+                <!-- Heading -->
+
+                <h3
+                    class="text text-xl font-bold uppercase -tracking-tighter md:text-2xl"
+                >
+                    English Dictionary
+                </h3>
+
+                <!-- Input -->
+                <input
+                    id="input"
+                    type="text"
+                    placeholder="Search a word"
+                    class="rounded-md px-4 py-2 text-sm outline-none md:w-[300px] md:text-lg"
+                />
+
+                <p id="info-text" class="text-sm capitalize md:text-lg">
+                    Type a word and press enter
+                </p>
+
+                <!-- Meaning Continer -->
+
+                <div
+                    id="meaning-container"
+                    class="hidden flex-col items-center space-y-4"
+                >
+                    <p
+                        class="text-md mt-4 text-center capitalize -tracking-tighter text-customNavyBlue md:text-lg"
+                    >
+                        Word title: <span id="title">Job</span>
+                    </p>
+                    <p
+                        class="text-md p-2 text-justify capitalize -tracking-tight text-customNavyBlue md:text-lg"
+                    >
+                        Meaning:
+                        <span id="meaning"
+                            >A Task Lorem ipsum dolor sit amet.</span
+                        >
+                    </p>
+                    <audio src="" id="audio" class="" controls></audio>
+                </div>
+            </div>
+        </div>
+
+        <script src="../build/js/script.js"></script>
+    </body>
+</html>
