@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-customPink font-Poppins"
+  >
+    <!-- Container -->
+    <div
+      class="max-h-[400px] w-[350px] items-center rounded-lg bg-customSandal px-8 py-6 text-customBlue shadow-md md:max-h-[500px] md:w-[700px] md:p-12"
+    >
+      <!-- Heading -->
+      <h2
+        class="text-center text-lg font-bold uppercase -tracking-tighter md:text-2xl"
+      >
+        Random Quote Generator
+      </h2>
+
+      <!-- Quote Container -->
+
+      <div class="relative flex flex-col space-y-4 md:space-y-6">
+        <!-- Quote Text -->
+        <p
+          id="quote"
+          class="mt-8 p-2 text-center capitalize before:absolute before:left-0 before:top-8 before:-translate-x-2 before:-translate-y-4 before:font-serif before:text-4xl before:content-['\201C'] after:absolute after:-bottom-4 after:right-0 after:-translate-y-6 after:translate-x-2 after:font-serif after:text-4xl after:content-['\201D'] md:mt-12 md:text-2xl md:before:text-6xl md:after:text-6xl"
+        >
+          Your time is limited, so don’t waste it living someone else’s life.
+          Don’t be trapped by dogma – which is living with the results of other
+          people’s thinking.
+        </p>
+
+        <!-- Author -->
+        <small id="author" class="text-md text-center italic md:text-xl">
+          --John Williams
+        </small>
+      </div>
+      <!-- Button -->
+      <div class="mt-6 flex flex-col items-center">
+        <button
+          id="btn"
+          class="focus:outline:none cursor-pointer rounded-lg bg-customOrange p-2 text-sm font-bold uppercase -tracking-tighter active:scale-[0.98] md:mt-4 md:px-4 md:py-2 md:text-xl"
+        >
+          Get Quote
+        </button>
+      </div>
+    </div>
+    <script src="../build/js/script.js"></script>
+  </body>
+</html>
