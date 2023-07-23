@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body
+        class="flex min-h-screen flex-col items-center justify-center bg-customSandal font-Poppins"
+    >
+        <!-- Container -->
+        <div
+            class="flex max-h-[500px] w-[330px] flex-col rounded-lg bg-customOrange p-8 shadow-lg md:max-h-[650px] md:w-[500px] md:p-10"
+        >
+            <!-- Intial Options -->
+            <div class="flex flex-col items-center space-y-4 md:space-y-6">
+                <h1
+                    class="text-lg font-bold uppercase -tracking-tighter text-customPink md:text-2xl"
+                >
+                    Anime Pics Generator
+                </h1>
+                <button
+                    id="btn"
+                    class="text-bold md:text-md rounded-full bg-customSandal px-4 py-2 text-sm uppercase -tracking-tighter text-customBlue active:scale-[0.98]"
+                >
+                    Get Anime
+                </button>
+            </div>
+
+            <!-- Image Container -->
+            <div
+                id="img-cont"
+                class="mt-12 hidden flex-col items-center justify-between space-y-10"
+            >
+                <!-- Image -->
+                <img
+                    id="img"
+                    src=""
+                    alt=""
+                    class="h-[180px] w-[180px] rounded-full border-2 border-solid border-customSandal md:h-[250px] md:w-[250px]"
+                />
+
+                <!-- Anime Name -->
+                <h3
+                    id="name"
+                    class="text-bold text-md w-[90%] rounded-md bg-customSandal px-12 py-2 text-center capitalize text-customBlue shadow-md md:text-lg"
+                ></h3>
+            </div>
+        </div>
+
+        <script src="../build/js/script.js"></script>
+    </body>
+</html>
