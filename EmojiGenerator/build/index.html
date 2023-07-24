@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Emoji Generator</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body
+        class="flex min-h-screen flex-col items-center justify-center bg-customSkyBlue font-Poppins"
+    >
+        <!-- Conatiner -->
+
+        <div
+            class="flex max-h-[500px] w-[300px] flex-col items-center rounded-lg bg-customWhite p-6 shadow-lg md:max-h-[600px] md:w-[500px] md:p-8 space-y-6 md:space-y-8"
+        >
+            
+                <!-- Title -->
+                <h1
+                    class="text-xl uppercase font-bold -tracking-tighter text-customDarkBlue md:text-2xl"
+                >
+                    Random Emoji
+                </h1>
+
+                <!-- Emoji and Name -->
+                <div id = "emoji-container" class="hidden flex-col items-center space-y-8 md:space-y-10 ">
+                    <div id="emoji"class="text-6xl md:text-8xl bg-customLightBlue px-2 py-6 md:py-8 rounded-lg"></div>
+                    <h3  id = "name" class="capitalize text-md text-customDarkBlue -tracking-tighter md:text-xl w-[100%] px-4 text-center"></h3>
+                </div>
+
+                <!-- Button -->
+
+                <button id ="btn" class="bg-customDarkBlue text-customWhite px-4 py-2 rounded-lg -tracking-tighter uppercase hover:bg-customLightBlue duration-500 active:scale-[0.98] hover:text-customDarkBlue ">
+                    Generate Emoji
+                </button>
+
+        
+            </div>
+        </div>
+        <script src = "../build/js/script.js"></script>
+    </body>
+</html>
