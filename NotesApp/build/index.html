@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-customDarkBlue min-h-screen text-customWhite font-Poppins">
+    <!-- Title -->
+    <div class="flex flex-col items-center mt-4 p-4 md:p-8 lg:p-10">
+      <h1 class="text-2xl font-bold uppercase -tracking-tighter md:text-4xl">
+        Notes App
+      </h1>
+      <p class="text-sm capitalize mt-4 md:text-lg">
+        Double Click on the notes to remove it
+      </p>
+    </div>
+
+    <!-- Notes -->
+
+    <div id="notes" class="notes mt-6 px-12 py-8 box-border">
+      <button
+        id="btn"
+        class="h-[200px] w-[250px] mx-auto md:h-[300px] md:w-[315px] bg-customDarkGrey border-none rounded-lg text-7xl text-customLightGrey hover:opacity-50 hover:text-customDarkBlue duration-300"
+      >
+        +
+      </button>
+    </div>
+
+    <script src="../build/js/script.js"></script>
+  </body>
+</html>

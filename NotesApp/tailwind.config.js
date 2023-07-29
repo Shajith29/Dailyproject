@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./build/*.html"],
+    content: ["./build/*.html", "./build/js/*.js"],
     theme: {
         extend: {
             fontFamily: {
@@ -8,11 +8,10 @@ module.exports = {
             },
 
             colors: {
-                customGreen: "#c9cba3",
-                customYellow: "#ffe1a8",
-                customOrange: "#e26d5c",
-                customBrown: "#723d46",
-                customDarkBrown: "#472d30",
+                customDarkBlue: "#27374D",
+                customDarkGrey: "#526D82",
+                customLightGrey: "#9DB2BF",
+                customWhite: "#DDE6ED",
             },
         },
     },
