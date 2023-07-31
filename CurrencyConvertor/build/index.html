@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Currency Convertor</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body
+        class="font-Poppins bg-customLightPurple flex flex-col items-center justify-center min-h-screen"
+    >
+        <!-- Container -->
+        <div
+            class="w-[320px] bg-customDarkBlue h-[420px] p-8 py-12 md:w-[600px] md:h-[450px] md:p-16 rounded-xl shadow-md"
+        >
+            <h1
+                class="text-customPink text-xl md:text-3xl uppercase text-center -tracking-tighter font-bold"
+            >
+                Currency Convertor
+            </h1>
+
+            <div class="flex flex-col md:space-y-12">
+                <!-- Input 1 -->
+                <div
+                    class="flex flex-col justify-between mt-8 space-y-6 md:flex-row"
+                >
+                    <select
+                        id="currency-first"
+                        class="border-none bg-customLightPurple focus:outline-none md:text-2xl text-customDarkBlue font-Poppins w-[80px] text-lg rounded-lg md:w-[100px] md:h-[50px] text-center md:mt-6"
+                    >
+                        <option value="USD">USD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="INR">INR</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+
+                    <input
+                        type="number"
+                        value="1"
+                        id="first-rate"
+                        class="border-none rounded-full p-1 bg-customPink focus:outline-none text-customDarkBlue px-4 text-lg md:text-xl"
+                    />
+                </div>
+
+                <!-- Input 2 -->
+                <div
+                    class="flex flex-col justify-between mt-8 space-y-6 md:flex-row"
+                >
+                    <select
+                        id="currency-second"
+                        class="border-none bg-customLightPurple focus:outline-none text-customDarkBlue font-Poppins w-[80px] text-lg md:text-2xl rounded-lg md:w-[100px] md:h-[50px] text-center md:mt-6"
+                    >
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+
+                        <option value="JPY">JPY</option>
+                    </select>
+
+                    <input
+                        type="number"
+                        id="second-rate"
+                        disabled
+                        class="border-none rounded-full p-1 md:text-xl bg-customPink focus:outline-none text-customDarkBlue px-4 text-lg"
+                    />
+                </div>
+            </div>
+
+            <p
+                id="exchange-rate"
+                class="text-customPink text-center mt-8 text-lg md:text-2xl md:mt-12"
+            >
+                1 USD = 1.54454 AUD
+            </p>
+        </div>
+
+        <script src="../build/js/script.js"></script>
+    </body>
+</html>
