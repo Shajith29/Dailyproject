@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-customSandal font-Poppins flex flex-col items-center justify-center min-h-screen"
+  >
+    <div
+      class="flex flex-col items-center w-[320px] h-[420px] bg-customLightPurple p-8 md:w-[550px] md:h-[520px] md:p-12 rounded-lg shadow-lg"
+    >
+      <h1
+        class="text-2xl uppercase text-center text-customSandal font-bold -tracking-tighter md:text-3xl"
+      >
+        Loan Calculator
+      </h1>
+
+      <!-- Input 1  -->
+      <div
+        class="flex flex-col md:w-[100%] space-y-2 md:space-y-2 mt-4 md:mt-6 md:ml-16"
+      >
+        <label
+          for="lamount"
+          class="text-lg md: mt-1 md:text-2xl -ml-4 text-customSandal"
+          >Loan Amount</label
+        >
+        <input
+          id="lamount"
+          type="number"
+          placeholder="Enter Loan Amount: "
+          onchange="calAmount()"
+          class="p-1 px-4 rounded-full md:w-[80%] bg-customSandal md:ml-6 md:text-xl text-customLightPurple md:py-2 focus:outline-none text-md"
+        />
+      </div>
+
+      <!-- Input 2  -->
+      <div
+        class="flex md:space-y-2 flex-col space-y-2 md:w-[100%] mt-4 md:mt-6 md:ml-16"
+      >
+        <label
+          for="irate"
+          class="text-lg md: mt-1 md:text-2xl -ml-4 text-customSandal"
+          >Rate of Interest % :
+        </label>
+        <input
+          id="irate"
+          type="number"
+          placeholder="Rate of Interest: "
+          onchange="calAmount()"
+          class="p-1 px-4 rounded-full md:w-[80%] bg-customSandal md:ml-6 md:text-xl text-customLightPurple md:py-2 focus:outline-none text-md"
+        />
+      </div>
+
+      <!-- Input 3  -->
+      <div
+        class="flex md:space-y-2 flex-col md:w-[100%] space-y-2 mt-4 md:mt-6 md:ml-16"
+      >
+        <label
+          for="months"
+          class="text-lg md: mt-1 md:text-2xl -ml-4 text-customSandal"
+          >Months To Pay</label
+        >
+        <input
+          id="months"
+          type="number"
+          placeholder="Months To Pay: "
+          onchange="calAmount()"
+          class="p-1 px-4 rounded-full md:w-[80%] bg-customSandal md:ml-6 md:text-xl text-customLightPurple md:py-2 focus:outline-none text-md"
+        />
+      </div>
+
+      <h2
+        class="mt-4 text-captialize py-2 md:py-4 text-customSandal text-xl md:text-2xl"
+      >
+        Monthly Payment: <span id="payment"></span>
+      </h2>
+    </div>
+    <script src="../build/js/script.js"></script>
+  </body>
+</html>
